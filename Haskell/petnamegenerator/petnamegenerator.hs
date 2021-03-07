@@ -1,0 +1,3 @@
+let first = ["Shu","Caca","Ai","Clai","Di","Gri","Rea","Bea","Cu","Lu","Sta","Clu","Po","I","A","Vo","Vy","Hy","Holla","Cale","Mea","Ne","Boo","Noome","Qui","Elle","Eli","Sabi","Se","Su","To","Ta","Salle","Bada","Mini","Mona","Talle","Poo"]
+let second = ["bbie","e","dan","re","lon","ffin","gan","u","Cu","Lu","ble","ke","be","deza","","ndia","dia","ndy","ll","poo","lly","ve","ds","kie","ssie","ghbal","dain","nn","well","mann","ckets","t","mma","berrs","rns","son","lla","nts"]
+[first ++ second | first <- first, second <- second]
