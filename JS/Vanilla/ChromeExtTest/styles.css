@@ -1,0 +1,50 @@
+* {
+  background-color: #212121;
+  color: #fff !important;
+}
+
+.c-page-header__wrapper * {
+  background-color: #bfbfbf !important;
+}
+
+.c-hamburger__icons {
+  color: black !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #bfbfbf !important;
+}
+
+
+p {
+  color: #fff !important;
+}
+
+
+.note {
+  color: #fff !important;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+}
+
+.media img {
+  background-color: #bfbfbf;
+}
+
+.c-bolt-icon--chevron-right svg {
+  background-color: #fff;
+}
+
+.c-bolt-button {
+  background-color: #bfbfbf !important;
+}
+
+.c-bolt-toc__list:host {
+  background-color: #bfbfbf !important;
+}
+
+
+
+/* .c-page-header__inner {
+  background-color: #bfbfbf;
+} */
