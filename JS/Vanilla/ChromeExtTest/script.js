@@ -1,20 +1,24 @@
-// window.addEventListener("DOMContentLoaded", () => {
-  
+// const display = document.querySelector('.o-bolt-grid__cell')
+//const leftDisplay = document.querySelector('.u-bolt-width-3/12@medium')
+
+// document.addEventListener("DOMContentLoaded", function(){
+//   const leftDisplay = document.querySelector('.u-bolt-width-3/12@medium')
+//   console.log(leftDisplay)
+//   leftDisplay.style.visibility = 'hidden !important'
 // });
 
+document.addEventListener('readystatechange', event => { 
 
-// if( document.readyState !== 'loading' ) {
-//   console.log( 'document is already ready, just execute code here' );
-//   myInitCode();
-// } else {
-//   document.addEventListener('DOMContentLoaded', function () {
-//       console.log( 'document was not ready, place code here' );
-//       myInitCode();
-//   });
-// }
+  // When HTML/DOM elements are ready:
+  if (event.target.readyState === "interactive") {   //does same as:  ..addEventListener("DOMContentLoaded"..
+      alert("hi 1");
+  }
 
-// function myInitCode() {
-//   const searchModule = document.querySelector('.search-module');
-//   const searchModuleRoot = searchModule && searchModule.shadowRoot;
-//   console.log(leftList)
-// }
+  // When window loaded ( external resources are loaded too- `css`,`src`, etc...) 
+  if (event.target.readyState === "complete") {
+    const leftDisplay = document.querySelectorAll('.o-bolt-grid__cell')
+    const headerNav = document.querySelectorAll('.c-page-header__utility-nav')
+    leftDisplay[4].remove()
+    headerNav.style.backgroundColor = '#bfbfbf'
+  }
+});

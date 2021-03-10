@@ -1,17 +1,18 @@
-// When the button is clicked, inject setPageBackgroundColor into current page
-changeColor.addEventListener("click", async () => {
-  let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+const btn = document.getElementById('btn')
 
-  chrome.scripting.executeScript({
-    target: { tabId: tab.id },
-    function: setPageBackgroundColor,
-  });
-});
+let darkMode = true
 
-// The body of this function will be executed as a content script inside the
-// current page
-function setPageBackgroundColor() {
-  chrome.storage.sync.get("color", ({ color }) => {
-    document.body.style.backgroundColor = color;
-  });
+btn.addEventListener('click', () => {
+  darkMode = !darkMode
+  updateMode()
+})
+
+function updateMode() {
+  if(darkMode) {
+    btn.innerText = 'Dark'
+    console.log("Turning on dark mode")
+  } else {
+    btn.innerText = 'Light'
+    console.log("Turning off dark mode")
+  }
 }

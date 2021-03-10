@@ -27,7 +27,12 @@
     {
       "matches": ["https://academy.pega.com/topic/*"], 
       "js": ["script.js"],
-      "css" : ["styles.css"]
+      "css" : ["topic.css"]
+    },
+    {
+      "matches": ["https://academy.pega.com/challenge/*"], 
+      "js": ["challenge.js"],
+      "css" : ["challenge.css"]
     }
   ]
 }

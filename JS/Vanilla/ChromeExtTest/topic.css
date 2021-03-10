@@ -1,0 +1,61 @@
+:root {
+  --dark-grey: #212121 !important;
+  --light-grey: #bfbfbf !important;
+  --text: #fff !important;
+}
+
+* {
+  background-color: var(--dark-grey);
+  color: var(--text);
+}
+
+.c-page-header * {
+  background-color: var(--light-grey) !important;
+}
+
+.c-page-header__wrapper * {
+  background-color: var(--light-grey);
+}
+
+.c-hamburger__icons {
+  color: black !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #bfbfbf !important;
+}
+
+p, td, th, span {
+  color: #fff !important;
+}
+
+.note {
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+}
+
+.media img {
+  background-color: #bfbfbf;
+}
+
+/* .c-bolt-icon--chevron-right svg {
+  background-color: #fff !important;
+} */
+
+/* .c-bolt-button {
+  background-color: #bfbfbf !important;
+} */
+/* 
+.c-bolt-toc__list:host {
+  background-color: #bfbfbf !important;
+} */
+
+.c-acd-remote-article-banner {
+  background-color: #212121 !important;
+}
+
+
+
+/* .c-page-header__inner {
+  background-color: #bfbfbf;
+} */

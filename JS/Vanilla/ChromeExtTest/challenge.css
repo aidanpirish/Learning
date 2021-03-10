@@ -1,17 +1,23 @@
+:root {
+  --dark-grey: #212121 !important;
+  --light-grey: #bfbfbf !important;
+  --text: #fff !important;
+}
+
 * {
-  background-color: #212121;
-  color: #fff !important;
+  background-color: var(--dark-grey);
+  color: var(--text);
 }
 
 .c-page-header__wrapper * {
-  background-color: #bfbfbf !important;
+  background-color: var(--light-grey);
 }
 
 .c-hamburger__icons {
   color: black !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, td, th, span {
   color: #bfbfbf !important;
 }
 
@@ -20,6 +26,9 @@ p {
   color: #fff !important;
 }
 
+td {
+  color: var(--text) !important;
+}
 
 .note {
   color: #fff !important;
@@ -41,6 +50,10 @@ p {
 
 .c-bolt-toc__list:host {
   background-color: #bfbfbf !important;
+}
+
+.c-acd-remote-article-banner {
+  background-color: #212121 !important;
 }
 
 
